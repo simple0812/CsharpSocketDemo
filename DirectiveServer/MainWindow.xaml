@@ -1,0 +1,25 @@
+﻿<Window x:Class="DirectiveServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DirectiveServer"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="57,20,0,0" TextWrapping="Wrap" Name="tbServer" Text="指令服务端：" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.667"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="110,20,0,0" TextWrapping="Wrap" Text="" Name="txtPort" VerticalAlignment="Top" Width="120"/>
+        <Button Content="启动"  x:Name="btnOpen" HorizontalAlignment="Left" Margin="402,527,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="停止" HorizontalAlignment="Left" Margin="257,527,0,0" VerticalAlignment="Top" Width="75" Click="Test_OnClick"/>
+        <Border BorderBrush="Black" 
+                      BorderThickness="1" 
+                      HorizontalAlignment="Left"
+                      Height="391"
+                      Margin="0,112,0,0"
+                      VerticalAlignment="Top" 
+                      Width="800">
+            <ListView x:Name="spMsg">
+            </ListView>
+        </Border>
+    </Grid>
+</Window>
